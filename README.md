@@ -54,7 +54,7 @@ local grafana = (import 'grafonnet/grafana.libsonnet')
 
 ### Status panel (by Vonage)
 
-[Status panel (by Vonage)](https://grafana.com/grafana/plugins/vonage-status-panel). See [tests](./tests/vonage_status_panel/) for example.
+[Status panel (by Vonage)](https://grafana.com/grafana/plugins/vonage-status-panel). See [tests](./tests/vonage_status_panel/test.jsonnet) for example.
 
 ## Contributing
 
