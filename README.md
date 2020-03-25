@@ -1,6 +1,8 @@
-# Grafonnet-plugins, a library with grafonnet extensions
+# Status panel extension for grafonnet
 
-A library that extends [grafonnet](https://github.com/grafana/grafonnet-lib) with some [plugin](https://grafana.com/grafana/plugins) panel templates.
+A library that extends [grafonnet](https://github.com/grafana/grafonnet-lib) with [Status panel (by Vonage)](https://grafana.com/grafana/plugins/vonage-status-panel) plugin template.
+
+Based on version 1.0.6 of Status panel.
 
 ## Getting started
 
@@ -8,12 +10,12 @@ A library that extends [grafonnet](https://github.com/grafana/grafonnet-lib) wit
 
 [grafonnet](https://github.com/grafana/grafonnet-lib) and its dependencies must be installed.
 
-### Install grafonnet-plugins
+### Install grafonnet-status-panel
 
 Clone this git repository inside the grafonnet one:
 
 ```
-git clone https://github.com/DifferentialOrange/grafonnet-plugins.git
+git clone https://github.com/DifferentialOrange/grafonnet-status-panel.git
 ```
 
 You can use [Jsonnet Bundler](https://github.com/jsonnet-bundler/jsonnet-bundler) instead:
@@ -32,7 +34,7 @@ You can use [Jsonnet Bundler](https://github.com/jsonnet-bundler/jsonnet-bundler
     {
       "source": {
         "git": {
-          "remote": "https://github.com/DifferentialOrange/grafonnet-plugins",
+          "remote": "https://github.com/DifferentialOrange/grafonnet-status-panel",
         }
       },
       "version": "master"
@@ -47,14 +49,12 @@ Then import the plugins with grafonnet in your jsonnet code:
 
 ```jsonnet
 local grafana = (import 'grafonnet/grafana.libsonnet')
-              + (import 'grafonnet-plugins/plugins.libsonnet');
+              + (import 'grafonnet-status-panel/plugin.libsonnet');
 ```
 
-## List of supported plugins
+## Example of usage
 
-### Status panel (by Vonage)
-
-[Status panel (by Vonage)](https://grafana.com/grafana/plugins/vonage-status-panel). See [tests](./tests/vonage_status_panel/test.jsonnet) for example.
+See [tests](./tests/test.jsonnet) for example.
 
 ## Contributing
 
