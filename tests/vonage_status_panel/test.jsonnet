@@ -5,6 +5,7 @@ local vonageStatusPanel = plugins.vonageStatusPanel;
   basic: vonageStatusPanel.new(
     'test'
   ),
+
   advanced: vonageStatusPanel.new(
     title='test',
     panelTitle='My panel',
@@ -19,6 +20,7 @@ local vonageStatusPanel = plugins.vonageStatusPanel;
     },
     isGrayOnNoData=true
   ),
+
   target: vonageStatusPanel.new(
     title='test'
   ).addTarget(
