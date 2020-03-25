@@ -50,6 +50,12 @@ local grafana = (import 'grafonnet/grafana.libsonnet')
               + (import 'grafonnet-plugins/plugins.libsonnet');
 ```
 
+## List of supported plugins
+
+### Status panel (by Vonage)
+
+[Status panel (by Vonage)](https://grafana.com/grafana/plugins/vonage-status-panel). See [tests](./tests/vonage_status_panel/) for example.
+
 ## Contributing
 
 Feel free to submit issues, as well as pull requests.
