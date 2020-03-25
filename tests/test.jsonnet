@@ -1,5 +1,5 @@
-local plugins = import 'plugins.libsonnet';
-local vonageStatusPanel = plugins.vonageStatusPanel;
+local plugin = import 'plugin.libsonnet';
+local vonageStatusPanel = plugin.vonageStatusPanel;
 
 {
   basic: vonageStatusPanel.new(

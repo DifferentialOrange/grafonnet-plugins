@@ -1,4 +1,4 @@
-{
+local vonageStatusPanel = {
   /**
    * Returns status panel metric display settings.
    * It is required to handle target result in status panel visualization
@@ -129,4 +129,8 @@
       targets+: [target { refId: std.char(std.codepoint('A') + nextTarget) } + display],
     },
   },
+};
+
+{
+  vonageStatusPanel:: vonageStatusPanel,
 }

@@ -2,7 +2,7 @@
 
 x=0
 
-for i in tests/*/*.jsonnet
+for i in tests/*.jsonnet
 do
     json=$(dirname $i)/$( basename $i .jsonnet )_test_output.json
     json_e=$(dirname $i)/$( basename $i .jsonnet )_compiled.json
