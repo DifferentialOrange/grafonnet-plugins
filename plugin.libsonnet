@@ -87,6 +87,9 @@ local vonageStatusPanel = {
     description='',
     transparent=null,
 
+    width=null,
+    height=null,
+
     panelTitle=null,
     removePrefix='',
     maxAlertNumber=null,
@@ -109,6 +112,10 @@ local vonageStatusPanel = {
     title: title,
     type: 'vonage-status-panel',
     [if span != null then 'span']: span,
+    gridPos: {
+      h: height,
+      w: width,
+    },
     [if datasource != null then 'datasource']: datasource,
     [if description != null then 'description']: description,
     [if transparent != null then 'transparent']: transparent,
