@@ -52,9 +52,9 @@ local grafana = (import 'grafonnet/grafana.libsonnet')
               + (import 'grafonnet-status-panel/plugin.libsonnet');
 ```
 
-## Example of usage
+## Examples of usage
 
-See [tests](./tests/test.jsonnet) for example.
+See [tests](./tests/test.jsonnet) for examples.
 
 ## Contributing
 
